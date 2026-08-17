@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commerce EDU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="container nav">
+      <div>
+        <div class="window-controls">
+          <span class="wc-red"></span>
+          <span class="wc-yellow"></span>
+          <span class="wc-green"></span>
+        </div>
+        <div class="logo">
+          <img src="logo.png" alt="Commerce EDU Logo" class="logo-img" />
+          <span>Commerce<span>EDU</span></span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#chapters">Chapters</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="btn btn-primary" type="button" data-payment-trigger>Buy Notes</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Smart Study Material</p>
+          <h1>Clear notes for every chapter, purchased when you need them.</h1>
+          <p class="subtitle">
+            High-quality exam notes, chapter-by-chapter PDFs, designed to help students study faster and smarter.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#chapters">Browse Chapters</a>
+            <a class="btn btn-secondary" href="#about">Learn More</a>
+          </div>
+          <ul class="stats">
+            <li><strong>4+</strong><span>Subjects</span></li>
+            <li><strong>500+</strong><span>Students</span></li>
+            <li><strong>4.9/5</strong><span>Ratings</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-card glass">
+          <div class="card-badge">Popular</div>
+          <h3>Physics Notes</h3>
+          <p>Complete chapter notes with formulas, diagrams, and examples.</p>
+          <div class="price-row">
+            <span class="price">₹749.00</span>
+            <span class="old-price">₹1,245.00</span>
+          </div>
+          <button class="btn btn-primary full-width" data-payment-trigger>Buy Chapter</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="chapters" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Available Chapters</p>
+          <h2>Choose the chapter you need</h2>
+        </div>
+
+        <div class="chapter-grid">
+          <article class="chapter-card glass">
+            <div class="chapter-tag">Chapter 1</div>
+            <h3>Introduction to Algebra</h3>
+            <p>Core concepts, practice tricks, and solved examples for quick revision.</p>
+            <div class="meta">
+              <span>PDF</span>
+              <span>12 Pages</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">₹665.00</span>
+              <button class="btn btn-secondary" type="button" data-payment-trigger data-amount="66500">Buy Now</button>
+            </div>
+          </article>
+
+          <article class="chapter-card glass">
+            <div class="chapter-tag">Chapter 2</div>
+            <h3>Trigonometry Basics</h3>
+            <p>Easy explanations, formulas, and exam-focused practice questions.</p>
+            <div class="meta">
+              <span>PDF</span>
+              <span>18 Pages</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">₹830.00</span>
+              <button class="btn btn-secondary" type="button" data-payment-trigger data-amount="83000">Buy Now</button>
+            </div>
+          </article>
+
+          <article class="chapter-card glass">
+            <div class="chapter-tag">Chapter 3</div>
+            <h3>Chemical Reactions</h3>
+            <p>Concept summaries with examples and revision tips for better retention.</p>
+            <div class="meta">
+              <span>PDF</span>
+              <span>16 Pages</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">₹749.00</span>
+              <button class="btn btn-secondary" type="button" data-payment-trigger data-amount="74900">Buy Now</button>
+            </div>
+          </article>
+
+          <article class="chapter-card glass">
+            <div class="chapter-tag">Chapter 4</div>
+            <h3>Structure of Atom</h3>
+            <p>Clean, structured notes for quick understanding of important topics.</p>
+            <div class="meta">
+              <span>PDF</span>
+              <span>15 Pages</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">₹610.50</span>
+              <button class="btn btn-secondary" type="button" data-payment-trigger data-amount="61050">Buy Now</button>
+            </div>
+          </article> 
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section pricing-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Simple Pricing</p>
+          <h2>Pay only for the chapters you need</h2>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card glass">
+            <h3>Single Chapter</h3>
+            <p class="price-tag">₹665.00 - ₹995.00</p>
+            <ul>
+              <li>One chapter PDF</li>
+              <li>Instant access</li>
+              <li>Exam-focused notes</li>
+            </ul>
+            <button class="btn btn-primary full-width" data-payment-trigger>Select</button>
+          </div>
+
+          <div class="pricing-card featured glass">
+            <div class="featured-label">Best Value</div>
+            <h3>Bundle Pack</h3>
+            <p class="price-tag">₹4,067.00</p>
+            <ul>
+              <li>5 chapter PDFs</li>
+              <li>Save 20%</li>
+              <li>Priority support</li>
+            </ul>
+            <button class="btn btn-primary full-width" data-payment-trigger>Get Bundle</button>
+          </div>
+
+          <div class="pricing-card glass">
+            <h3>Full Subject</h3>
+            <p class="price-tag">₹8,217.00</p>
+            <ul>
+              <li>All chapters</li>
+              <li>Updated notes</li>
+              <li>Monthly updates</li>
+            </ul>
+            <button class="btn btn-primary full-width" type="button" data-payment-trigger>Choose Subject</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="notes" class="section notes-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Paid Notes Access</p>
+          <h2>Unlock your chapter notes</h2>
+        </div>
+
+        <div id="notes-locked" class="notes-lock-box glass">
+          <h3>Payment required</h3>
+          <p>Complete the payment to unlock the PDF notes and view them in the browser or download them.</p>
+          <button class="btn btn-primary" data-payment-trigger>Unlock Notes</button>
+        </div>
+
+        <div id="notes-unlocked" class="notes-list hidden">
+          <article class="note-item glass">
+            <div>
+              <div class="chapter-tag">Chapter 1</div>
+              <h3>Introduction to Algebra</h3>
+            </div>
+            <div class="note-actions">
+              <a class="btn btn-secondary" href="/notes/chapter-1-algebra.pdf" target="_blank" rel="noopener noreferrer">Open in Browser</a>
+              <a class="btn btn-primary" href="/notes/chapter-1-algebra.pdf/download" download>Download PDF</a>
+            </div>
+          </article>
+
+          <article class="note-item glass">
+            <div>
+              <div class="chapter-tag">Chapter 2</div>
+              <h3>Trigonometry Basics</h3>
+            </div>
+            <div class="note-actions">
+              <a class="btn btn-secondary" href="/notes/chapter-2-trigonometry.pdf" target="_blank" rel="noopener noreferrer">Open in Browser</a>
+              <a class="btn btn-primary" href="/notes/chapter-2-trigonometry.pdf/download" download>Download PDF</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">Why Students Choose Us</p>
+          <h2>Study smarter with organized chapter notes.</h2>
+        </div>
+        <div class="feature-list">
+          <div class="feature-item glass">
+            <h4>Easy to Understand</h4>
+            <p>Notes written in a clear and student-friendly style.</p>
+          </div>
+          <div class="feature-item glass">
+            <h4>Exam Ready</h4>
+            <p>Designed for revision, quick learning, and important questions.</p>
+          </div>
+          <div class="feature-item glass">
+            <h4>Affordable Access</h4>
+            <p>Buy only the chapters you really need, with no unnecessary extras.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-content">
+      <div>
+        <div class="logo">Commerce<span>EDU</span></div>
+        <p>Helping students learn smarter, chapter by chapter.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#chapters">Chapters</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="contact-box">
+        <p>Email: supportcommerceedu@gmail.com</p>
+        <p>Phone: +91 9061148206</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+    const lockBox = document.getElementById('notes-locked');
+    const notesList = document.getElementById('notes-unlocked');
+
+    const BASE_URL = window.location.protocol === 'file:' ? 'http://localhost:3000' : window.location.origin;
+    const NOTE_PRICE = 66500;
+
+    async function checkAccess() {
+      try {
+        const response = await fetch(`${BASE_URL}/api/check-access`);
+        const data = await response.json();
+        const isPaid = !!data.paid;
+        lockBox.classList.toggle('hidden', isPaid);
+        notesList.classList.toggle('hidden', !isPaid);
+      } catch (error) {
+        console.error('checkAccess failed:', error);
+      }
+    }
+
+    async function openRazorpay(amount = NOTE_PRICE) {
+      try {
+        const configResponse = await fetch(`${BASE_URL}/api/config`);
+        if (!configResponse.ok) {
+          const text = await configResponse.text();
+          alert(`Unable to fetch payment config (${configResponse.status}): ${text}`);
+          return;
+        }
+
+        const configData = await configResponse.json();
+
+        if (!configData.ok) {
+          alert(configData.message || 'Razorpay is not configured yet.');
+          return;
+        }
+
+        const response = await fetch(`${BASE_URL}/api/create-order`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ amount })
+        });
+
+        if (!response.ok) {
+          const text = await response.text();
+          alert(`Unable to start payment (${response.status}): ${text}`);
+          return;
+        }
+
+        const data = await response.json();
+
+        if (!data.ok) {
+          alert(data.message || 'Unable to start payment.');
+          return;
+        }
+
+        if (!window.Razorpay) {
+          alert('Razorpay checkout script failed to load. Please refresh the page and try again.');
+          return;
+        }
+
+        const options = {
+          key: configData.keyId,
+          amount: data.order.amount,
+          currency: data.order.currency,
+          order_id: data.order.id,
+          name: 'Commerce EDU',
+          description: 'Paid Chapter Notes Access',
+          image: 'logo.png',
+          handler: async function (paymentResponse) {
+            const verifyResponse = await fetch(`${BASE_URL}/api/verify-payment`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(paymentResponse)
+            });
+
+            const verifyData = await verifyResponse.json();
+
+            if (verifyData.ok) {
+              alert('Payment successful! Your notes are unlocked.');
+              checkAccess();
+            } else {
+              alert(verifyData.message || 'Payment verification failed.');
+            }
+          },
+          prefill: {
+            name: 'Student Name',
+            email: 'student@example.com',
+            contact: '9999999999'
+          },
+          theme: {
+            color: '#4f46e5'
+          },
+          modal: {
+            ondismiss: function () {
+              console.log('Payment popup closed by user.');
+            }
+          }
+        };
+
+        const razorpay = new Razorpay(options);
+        razorpay.open();
+      } catch (error) {
+        console.error('Payment failed:', error);
+        alert('Something went wrong while starting the payment.');
+      }
+    }
+
+    document.querySelectorAll('[data-payment-trigger]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const amount = Number(button.dataset.amount || NOTE_PRICE);
+        openRazorpay(amount);
+      });
+    });
+
+    checkAccess();
+  </script>
+</body>
+</html>

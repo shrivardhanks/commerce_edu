@@ -1,0 +1,15 @@
+{
+  "name": "commerce-edu-notes",
+  "version": "1.0.0",
+  "description": "Paid chapter notes website with Razorpay access control",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "razorpay": "^2.9.4"
+  }
+}
